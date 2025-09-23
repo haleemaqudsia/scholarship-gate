@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Homepage | Scholarship Gate",
   description: "Scholarship Gate - Unlocking global education opportunities abroad",
@@ -11,10 +13,18 @@ export default function Home() {
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "15px 30px", backgroundColor: "#1E3A8A", color: "white" }}>
         <h2 style={{ fontSize: "1.5rem", fontWeight: "bold" }}>Scholarship Gate</h2>
         <ul style={{ listStyle: "none", display: "flex", gap: "20px", margin: 0, padding: 0 }}>
-          <li><a href="/" style={{ color: "white", textDecoration: "none" }}>Home</a></li>
-          <li><a href="#about" style={{ color: "white", textDecoration: "none" }}>About</a></li>
-          <li><a href="#offer" style={{ color: "white", textDecoration: "none" }}>What We Offer</a></li>
-          <li><a href="#contact" style={{ color: "white", textDecoration: "none" }}>Contact</a></li>
+          <li>
+            <Link href="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
+          </li>
+          <li>
+            <Link href="#about" style={{ color: "white", textDecoration: "none" }}>About</Link>
+          </li>
+          <li>
+            <Link href="#offer" style={{ color: "white", textDecoration: "none" }}>What We Offer</Link>
+          </li>
+          <li>
+            <Link href="#contact" style={{ color: "white", textDecoration: "none" }}>Contact</Link>
+          </li>
         </ul>
       </nav>
 
